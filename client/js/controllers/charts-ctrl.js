@@ -20,12 +20,12 @@
                 lines: {
                     show: true,
                     lineWidth: 0.2,
-                    fill: 0.5
+                    fill: 0.4
                 },
     
                 //color: '#edeff0',
                 color: '#EDEFF0',
-                shadowSize: 0,
+                shadowSize: 5,
                 points: {show:true, fill:false}
             },
             yaxis: {
@@ -145,10 +145,10 @@
 	    	/* Frequency Plot */
 	    	else if(response.unitID == "7"){
 	    		if(response.data <= 20 || response.data >= 40){
-	    			dynamicChartSetupFrequency.series.color = "#EDEFF0";
+	    			dynamicChartSetupFrequency.series.color = "#CE2761";
 	    		}
 	    		else{
-	    			dynamicChartSetupFrequency.series.color = "#667077";
+	    			dynamicChartSetupFrequency.series.color = "#EDEFF0";
 	    		}
 	    		frequency_plot = $.plot("#chart-dynamic-frequency", [ getCurrentData(0, 1) ], dynamicChartSetupFrequency);
 

@@ -1,5 +1,5 @@
-
-    <div class="card">
+<!--
+    <div class="card" >
         <div class="card__header">
             <h2>Sales Statistics <small>Vestibulum purus quam scelerisque, mollis nonummy metus</small></h2>
 
@@ -21,10 +21,10 @@
             <div id="chart-curved-line" class="flot-chart"></div>
         </div>
     </div>
+-->
 
 
-
-    <div class="row">
+    <div class="row" ng-init="charts.loadLibraries()">
         <div class="col-md-6">
             <div class="card widget-analytic">
                 <div class="card__header">
@@ -91,8 +91,7 @@
                 </div>
 
                 <div class="card__body">
-                    <div id="chart-line" class="flot-chart"></div>
-                    <div class="flot-chart-legend flot-chart-legend--line"></div>
+                    <div id="chart-dynamic-frequency" class="flot-chart"></div>
                 </div>
             </div>
         </div>

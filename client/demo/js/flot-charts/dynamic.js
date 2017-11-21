@@ -33,6 +33,11 @@ $(document).ready(function(){
         return res;
     }
 
+
+    /*function getRandomData(){
+        return [[1,1], [2, 2], [3, 3], [4, 4], [5, 5]];
+    }*/
+
     /* Update chart */
     function update() {
         plot.setData([getRandomData()]);
@@ -44,8 +49,8 @@ $(document).ready(function(){
 
     /* Create Chart */
     
-    if ($('#chart-dynamic')[0]) {
-        var plot = $.plot("#chart-dynamic", [ getRandomData() ], {
+    if ($('#chart-dynamic-energy')[0]) {
+        var plot = $.plot("#chart-dynamic-energy", [ getRandomData() ], {
             series: {
                 label: "Server Process Data",
                 lines: {
